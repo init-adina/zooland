@@ -8,11 +8,71 @@
 		<link rel="stylesheet" href="./style.css">
   </head>
   <body class="bg-gray-2  00">
-    <div>
-			<header>
-        
-			</header>
+   
+
+
+    <div class="container mx-auto lg:px-24">
+
+			<navbar class="nav">
+				<ul class="flex justify-between items-center border-b border-blue-950 text-blue-900 py-4">
+					<div>
+					<li class="font-bold text-blue-950 text-xl"><a href="#">Pet.care</a></li>
+					</div>
+
+					<div class="flex gap-16 items-center text-nowrap">
+					<li class="font-bold text-blue-950"><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Medi-care</a></li>
+					</div>
+
+					<div>
+						<li class="font-bold text-nowrap"><a href="#" class="">Sign up</a></li>
+					</div>
+
+				</ul>
+			</navbar>
+
+			<section class="main-intro text-blue-900 py-10 flex justify-between items-center">
+
+				<div class="left flex flex-col w-1/2 max-w-[800px] gap-10">
+					<div class="text-blue-950 font-bold text-7xl ">Care of your Little pets.</div>
+					<div class="text-md font-medium">We believe finding a reliable, professional pet sitter should be easy. So we make sure every member of our Family.</div>
+
+					<div class="btns flex gap-4 items-center">
+						<button class="bg-orange-500 py-4 px-10 rounded-full text-white">Our Service</button>
+						<button>Schedule a call</button>
+					</div>
+				</div>
+
+				<div class="right relative flex gap-8">
+
+					<div class="bg-peach rounded-full w-72 overflow-hidden shadow-2xl sh">
+">
+						<img src="./image/cat-zoo.png" alt="cat" class="h-96 object-cover py-5">
+					</div>
+
+					<div class="flex flex-col gap-20 items-center">
+
+						<div class="h-60 w-36 ">
+							<div class="bg-pink-custom rounded-full overflow-hidden size-full">
+								<img src="./image/cat-zoo2.png" alt="cat2" class="object-cover size-full">
+							</div>
+						</div>
+
+					<button class="font-bold bg-white py-3 px-4 rounded-full flex items-center gap-4 ">
+						<span>Next</span>
+						<div class="rounded-full bg-orange-100 p-2">
+						<img src="image/arrow-up.png" alt="arrow-up" class="size-4 ">
+						</div>
+					</button>
+					</div>
+
+				</div>
+			</section>
 		</div>
+    <script type="module" src="/main.js"></script>
+
 
 
 
@@ -82,7 +142,4 @@
 
 <!-- ////////////////////////////////////////////// -->
 
-
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>
