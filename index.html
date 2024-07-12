@@ -8,78 +8,74 @@
 		<link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="container mx-auto lg:px-20">
+  <div class="container mx-auto">
+    <navbar class="nav flex justify-between items-center py-4 border-b border-blue-950 text-blue-900">
+      <div class="font-bold text-blue-950 text-xl"><a href="#">Pet.care</a></div>
+      <ul class=" lg:items-center hidden lg:flex">    
+        <div class="flex gap-16 items-center text-nowrap">
+        <li class="font-bold text-blue-950"><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Medi-care</a></li>
+        </div>
+      </ul>
+      <div class="font-bold text-nowrap hidden lg:flex">
+          <a href="#" class="">Sign up</a>
+        </div>
+          <div class="burger z-20 cursor-pointer lg:hidden">
+            <div class="flex flex-col gap-1.5 lg:hidden w-7 [&>*]:transition-all" id="burger-btn">
+              <span class="bg-blue-950/80 w-full h-0.5"></span>
+              <span class="bg-blue-950/80 w-full h-0.5"></span>
+              <span class="bg-blue-950/80 w-full h-0.5"></span>
+            </div>
+          </div>
+    </navbar>
 
-			<navbar class="nav">
-				<ul class="flex justify-between items-center border-b border-blue-950 text-blue-900 py-4">
-					<div>
-					<li class="font-bold text-blue-950 text-xl"><a href="#">Pet.care</a></li>
-					</div>
 
-					<div class="flex gap-16 items-center text-nowrap">
-					<li class="font-bold text-blue-950"><a href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Training</a></li>
-					<li><a href="#">Medi-care</a></li>
-					</div>
+    <section class="main-intro text-blue-900 py-20 flex lg:justify-between lg:flex-row lg:items-center flex-col gap-8">
+      <div class="left flex flex-col lg:w-1/2 max-w-[800px] gap-10 ">
+        <div class="text-blue-950 font-bold lg:text-7xl text-5xl">Care of your Little pets.</div>
+        <div class="text-md font-medium">We believe finding a reliable, professional pet sitter should be easy. So we make sure every member of our Family.</div>
+        <div class="btns flex gap-2 items-center">
+        <button class="bg-orange-500 py-4 hover:bg-orange-400 lg:px-10 px-2 rounded-full text-white flex items-center gap-4 shadow-lg shadow-orange-200">
+          <span class="font-medium text-nowrap">Our Service</span>
+          <img src="./img/arrow-white.svg" alt="arrow-up" class="size-3">
+        </button>
+        <button class="flex items-center gap-4 hover:border-blue-950 border border-transparent transition-all py-4 px-2 lg:px-10 rounded-full ">
+          <img src="./img/phone.svg" alt="phone" class="size-4">
+          <span class="font-medium text-nowrap">Schedule a call</span>
+        </button>
+      </div>
+      </div>
+      <div class="right relative flex  gap-8 justify-center ">
+        <div class="bg-peach/60 rounded-full  lg:w-72 lg:h-96 w-60 h-60 overflow-hidden shadow-2xl sh relative">
+          <img src="./img/cat-zoo6.png" alt="cat" class="object-cover absolute -bottom-0">
+        </div>
+        <div class="flex flex-col gap-20 items-center max-lg:hidden">
+          <div class="h-60 w-36">
+            <div class="bg-pink-custom/65 rounded-full overflow-hidden size-full">
+              <img src="./img/cat-zoo2.png" alt="cat2" class="object-cover size-full">
+            </div>
+          </div>
+          <button class="font-bold bg-white py-3 px-4 rounded-full flex items-center gap-4 border">
+            <span>Next</span>
+            <div class="rounded-full bg-orange-100 p-2">
+            <img src="img/arrow.svg" alt="arrow-up" class="size-4 ">
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
 
-					<div>
-						<li class="font-bold text-nowrap"><a href="#" class="">Sign up</a></li>
-					</div>
+  </div>
 
-				</ul>
-			</navbar>
 
-			<section class="main-intro text-blue-900 py-20 flex justify-between items-center">
+<!--  //////////////////////// -->
+<section class="block-2">
+  <div class="container grid lg:grid-cols-3 grid-cols-1 gap-10  mx-auto py-20">
 
-				<div class="left flex flex-col w-1/2 max-w-[800px] gap-10">
-					<div class="text-blue-950 font-bold text-7xl ">Care of your Little pets.</div>
-					<div class="text-md font-medium">We believe finding a reliable, professional pet sitter should be easy. So we make sure every member of our Family.</div>
-
-					<div class="btns flex gap-10 items-center">
-					<button class="bg-orange-500 py-4 hover:bg-orange-400 px-10 rounded-full text-white flex items-center gap-4 shadow-lg shadow-orange-200">
-						<span class="font-medium">Our Service</span>
-						<img src="./img/arrow-white.svg" alt="arrow-up" class="size-3">
-					</button>
-					<button class="flex items-center gap-4 hover:border-blue-950 border border-transparent transition-all py-4 px-10 rounded-full ">
-						<img src="./img/phone.svg" alt="phone" class="size-4">
-						<span class="font-medium">Schedule a call</span>
-					</button>
-				</div>
-				</div>
-
-				<div class="right relative flex gap-8">
-
-					<div class="bg-peach/60 rounded-full w-72 overflow-hidden shadow-2xl sh relative">
-">
-						<img src="./img/cat-zoo6.png" alt="cat" class="h-96 object-cover absolute -bottom-0">
-					</div>
-
-					<div class="flex flex-col gap-20 items-center">
-
-						<div class="h-60 w-36 ">
-							<div class="bg-pink-custom/65 rounded-full overflow-hidden size-full">
-								<img src="./img/cat-zoo2.png" alt="cat2" class="object-cover size-full">
-							</div>
-						</div>
-
-					<button class="font-bold bg-white py-3 px-4 rounded-full flex items-center gap-4 border">
-						<span>Next</span>
-						<div class="rounded-full bg-orange-100 p-2">
-						<img src="img/arrow.svg" alt="arrow-up" class="size-4 ">
-						</div>
-					</button>
-					</div>
-
-				</div>
-			</section>
-
-			<section class="block-2">
-  <div class=" grid grid-cols-3  py-10">
-
-    <div class="flex ">
+    <div class=" lg:flex lg:justify-start hidden">
       <img src="img/dog-2.jpg" class="overflow-hidden outline outline-white  rounded-full w-1/2 " />
-      <div></div>
     </div>
 
   <div class="flex justify-center flex-col items-center">
@@ -90,51 +86,41 @@
       </h1>
   </div>
 
-  <div class="flex justify-end">
+  <div class="flex justify-center lg:justify-end">
     <img src="img/cat-pink.jpeg" class="overflow-hidden rounded-full outline outline-white w-1/2   " />
     <img src="img/dog-3.jpg" class="overflow-hidden rounded-full outline outline-white  w-1/2 -ml-20" />
   </div>
 
   </div>
-			</section>
+</section>
 
 
-			<section class="block-3">
-				<div class="container mx-auto py-10">
-					<div class="mx-auto  bg-[#FEF6ED] p-9 rounded-2xl flex flex-wrap">
-						<div class="flex w-1/2 justify-center">
 
-							<div class="w-[300px] shrink-0 rounded-full overflow-hidden flex items-end outline outline-white bg-blue-300" >
-								<div class="overflow-hidden mx-auto ">
-								<img src="img/kot.png"/>
-								</div>
-							</div>
 
-			<!-- 
-							<div class="h-60 w-36 relative">
-								<div class="bg-rose-300 absolute -right-20 rounded-full overflow-hidden size-full">
-									<img src="./img/kot.png" alt="cat2" class="object-cover size-full">
-								</div>
-							</div> -->
-
-						</div>
-						
-						<div class="p-10 grid w-1/2 gap-4">
-							<h1 class="text-blue-900 font-medium text-5xl">Hov to take alal of your  pets</h1>
-							<p>
-								aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-							</p>
-							<p>
-								dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-							</p>
-						</div>
-
-					</div>
-				</div>
-			</section>
 		
-</div>
-    <script type="module" src="/main.js"></script>
 
-
+<section class="block-3">
+  <div class="container mx-auto  py-10">
+    <div class=" bg-[#FEF6ED] lg:p-20 rounded-3xl  p-10  lg:flex ">
+      <div class="flex lg:w-1/2 justify-center">
+   
+        <div class="bg-[#6C91D8] rounded-full w-72 shrink-0 h-[400px] overflow-hidden  relative">
+         <img src="./img/kot-sky.jpg" alt="cat" class="h-96 object-cover absolute -bottom-0">
+        </div>
+          
+      </div>
+      
+      <div class="py-10 grid lg:w-1/2 shrink-0 gap-4">
+        <h1 class="text-blue-900 font-medium text-5xl">Hov to take alal of your  pets</h1>
+        <p>
+          aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+        </p>
+        <p>
+          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        </p>
+      </div>
+    </div>
+  </div>  
+</section>
+  </body>
 </html>
