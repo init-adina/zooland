@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sh {
+	box-shadow: 0 0 1000px #FE9676
+}
