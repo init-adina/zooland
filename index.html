@@ -7,10 +7,10 @@
     <title>Zooland</title>
 		<link rel="stylesheet" href="./style.css">
   </head>
-  <body>
+  <body class='bg-white'>
   <div class="container mx-auto lg:px-24 px-8">
     <navbar class="nav flex justify-between items-center py-4 border-b border-blue-950 text-blue-900">
-      <div class="font-bold text-blue-950 text-xl"><a href="/">Pet.care</a></div>
+      <div class=" w-36"><a href="/"><img src="./img/zoologo.png"/></a></div>
       <ul class=" lg:items-center hidden lg:flex">    
         <div class="flex gap-16 items-center text-nowrap">
         <li class="font-bold text-blue-950"><a href="#">Home</a></li>
@@ -19,12 +19,11 @@
         <li><a href="#">Medi-care</a></li>
         </div>
       </ul>
-      <div class="font-bold text-nowrap hidden lg:flex">
-          <a href="#" class="">Sign up</a>
-        </div>
 
-          <div class="burgerBtn z-30 relative cursor-pointer lg:hidden">
-            <div class="flex flex-col gap-1.5 lg:hidden w-7 [&>*]:transition-all" id="burger-btn">
+
+          <div class=" z-30 relative cursor-pointer lg:hidden">
+            
+            <div class="flex flex-col gap-1.5 lg:hidden w-7 [&>*]:transition-all" id="burgerBtn">
               <span class="bg-blue-950/80 w-full h-0.5"></span>
               <span class="bg-blue-950/80 w-full h-0.5"></span>
               <span class="bg-blue-950/80 w-full h-0.5"></span>
@@ -32,41 +31,36 @@
           </div>
 
 					<ul id="burger-menu" class="hidden  lg:hidden bg-white absolute left-0 top-0 w-full h-screen text-center space-y-14 pt-28 font-bold text-lg z-20">
-							 <li class="font-bold text-blue-950"><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Training</a></li>
-        <li><a href="#">Medi-care</a></li>
-						</ul>
+							<li class="font-bold text-blue-950"><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Training</a></li>
+              <li><a href="#">Medi-care</a></li>
+					</ul>
     </navbar>
 
 
 <section class="main-intro text-blue-900 py-14 flex lg:justify-between lg:flex-row lg:items-center flex-col gap-8 border-b">
-      <div class="left flex flex-col lg:w-1/2 max-w-[800px] gap-10 ">
+      <div class="left flex flex-col lg:w-1/2 max-w-[800px] gap-10 order-2 lg:order-1">
         <div class="text-blue-950 font-bold lg:text-7xl text-4xl max-lg:text-center">Care of your Little pets.</div>
-        <div class="text-md font-medium max-lg:text-center">We believe finding a reliable, professional pet sitter should be easy. So we make sure every member of our Family.</div>
+        <div class="text-md font-medium max-lg:text-center">rem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </div>
         
-				<div class="btns flex gap-2 items-center max-lg:flex-wrap gap-y-4">
-
-					<button class="bg-orange-500 justify-center py-4 hover:bg-orange-400 px-10 max-lg:w-full rounded-full text-white flex items-center gap-2 shadow-lg shadow-orange-200">
-						<span class="font-medium text-nowrap ">Our Service</span>
-						<img src="./img/arrow-white.svg" alt="arrow-up" class="size-3">
-					</button>
-
-					<button class="flex items-center justify-center gap-4 lg:hover:border-blue-950 max-lg:w-full max-lg:border-blue-950 border border-transparent transition-all px-10 py-4 rounded-full ">
-						<img src="./img/phone.svg" alt="phone" class="size-4">
-						<span class="font-medium text-nowrap">Schedule a call</span>
-					</button>
+				<div class="btns items-center max-lg:flex-wrap ">
+          <div class="pb-3 text-blue-900 text-center lg:text-start" >Оставьте свой номер телефона и мы Вам перезвоним</div>
+					<form id="number" class="flex flex-wrap sm:flex-nowrap gap-5 justify-center lg:justify-start ">		<!-- <span class="font-medium text-nowrap ">Our Service</span> -->
+          <input name="phone" value="+7 (___) ___-__-__" class="bg-gray-100  py-2 px-6 outline outline-4  outline-gray-100 focus:outline-red-200"   />
+          <input  class="text-white  py-2 px-6 outline outline-4 outline-red-500 font-bold  bg-red-500 cursor-pointer" type="submit"  />
+          </form>
 				
-      </div>
+        </div>
 
       </div>
-      <div class="right relative flex  gap-8 justify-center ">
-        <div class="bg-peach/60 rounded-full  lg:w-72 lg:h-96 w-60 h-60 overflow-hidden shadow-2xl sh relative">
-          <img src="./img/cat-zoo6.png" alt="cat" class="object-cover absolute -bottom-0">
+      <div class="right relative flex  gap-8 justify-center order-1 lg:order-2">
+        <div class="bg-[#FE9676] rounded-full  lg:w-72 lg:h-[420px] w-60 h-60 overflow-hidden  shadow-2xl sh relative">
+          <img src="./img/dog-orange.png" alt="cat" class="object-cover absolute  w-full h-full ">
         </div>
         <div class="flex flex-col gap-20 items-center max-lg:hidden">
           <div class="h-60 w-36">
-            <div class="bg-pink-custom/65 rounded-full overflow-hidden size-full">
+            <div class="bg-pink-custom/65 shadow-2xl shadow-pink-custom/65  rounded-full outline outline-white  overflow-hidden size-full">
               <img src="./img/cat-zoo2.png" alt="cat2" class="object-cover size-full">
             </div>
           </div>
@@ -81,53 +75,64 @@
   </section>
 
 <section class="block-2">
-  <div class=" grid lg:grid-cols-3 grid-cols-1 gap-10  py-14">
+  <div class=" grid lg:grid-cols-3 grid-cols-1 gap-10  py-24">
 
     <div class=" lg:flex lg:justify-start hidden ">
-      <img src="img/dog-2.jpg" class="overflow-hidden shadow-2xl shadow-yellow-400    outline outline-white  rounded-full w-1/2 " />
+      <img src="img/dog-2.jpg" class="overflow-hidden shadow-2xl shadow-yellow-400  w-48  h-48  xl:h-fit outline outline-white  rounded-full xl:w-1/2 " />
     </div>
-
+ 
   <div class="flex justify-center flex-col items-center">
   
-      <h2 class="text-xl text-blue-900">How can we help</h2>
-      <h1 class="text-blue-950 font-bold text-4xl pt-4 text-center">   
+      <h2 class="text-xl tracking-wide text-blue-950">How can we help</h2>
+      <h1 class="text-blue-950 font-bold text-4xl pt-2 text-center">   
         While you are on vacation or at work can be stressful.
       </h1>
   </div>
 
   <div class="flex justify-center lg:justify-end">
-    <img src="img/cat-pink.jpeg" class="overflow-hidden rounded-full outline outline-white shadow-2xl shadow-pink-300 w-1/2   " />
-    <img src="img/dog-3.jpg" class="overflow-hidden rounded-full outline outline-white shadow-2xl shadow-gray-400  w-1/2 -ml-20" />
+    <img src="img/cat-pink.jpeg" class="overflow-hidden rounded-full outline outline-white shadow-2xl  w-44  h-44   shadow-pink-300 xl:w-1/2   xl:h-fit  " />
+    <img src="img/dog-3.jpg" class="overflow-hidden rounded-full outline outline-white shadow-2xl  w-44  h-44   shadow-gray-400  xl:w-1/2 -ml-20 xl:h-fit" />
   </div>
 
   </div>
 </section>
 
-<section class="block-3">
-  <div class="container mx-auto  py-10">
-    <div class=" bg-orange-50 lg:p-20 rounded-3xl  p-10  lg:flex ">
-      <div class="flex lg:w-1/2 justify-center">
+  </div>
+
+<section class="block-3 bg-gray-50 py-28">
+  <div class="container mx-auto  lg:px-24 px-8">
+    <div class="  rounded-3xl    lg:flex ">
+
+
+      <div class="flex lg:w-1/2  justify-center lg:justify-start ">
    
-        <div class="bg-[#6C91D8] rounded-full w-64 sm:w-72 shrink-0 h-[400px] overflow-hidden  shadow-2xl shadow-blue-600 relative">
-         <img src="./img/kot-sky.jpg" alt="cat" class="h-96 object-cover absolute -bottom-0">
+
+
+        <div class="bg-[#C5DFFB] rounded-full w-64 sm:w-72 xl:w-96 shrink-0 outline outline-white h-[450px] xl:h-[600px] flex justify-center overflow-hidden  shadow-2xl shadow-blue-200 relative">
+         <img src="./img/kot-4.png" alt="cat" class="object-cover  absolute -bottom-0">
         </div>
           
       </div>
-      
-      <div class="py-10 grid lg:w-1/2 shrink-0 gap-4 text-blue-900">
-        <h1 class=" text-4xl font-bold text-blue-950">How to take care of your pets</h1>
-        <p>
+
+      <div class="flex flex-col gap-8  py-10 lg:py-0 lg:w-1/2 shrink-0 text-center lg:text-start text-blue-900">
+        <h1 class="  text-blue-950  font-bold lg:text-7xl text-4xl">How to take care of your pets</h1>
+        <div class="inline font-medium ">
           aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-        </p>
-        <p>
+        </div>
+        <div class="inline font-medium">
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-        </p>
+        </div>
       </div>
+
+
+ 
+      
+
     </div>
   </div>  
 </section>
 
-
+<!-- 
 <section class="block-3">
   <div class="container mx-auto  py-10">
     <div class="  rounded-3xl  p-10  lg:flex ">
@@ -153,6 +158,8 @@
       </div>
     </div>
   </div>  
-</section>
+</section> -->
+
+<script type="module" src="main.js"></script>
   </body>
 </html>
